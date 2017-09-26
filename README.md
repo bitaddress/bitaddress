@@ -1,5 +1,5 @@
 # Bit Address
-https://travis-ci.org/bitaddress/bitaddress.svg?branch=master
+![](https://travis-ci.org/bitaddress/bitaddress.svg?branch=master)
 
 Command line bitcoin wallet generator, inspired by [bitaddress.org](bitaddress.org)
 
