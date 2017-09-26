@@ -1,4 +1,5 @@
 # Bit Address
+https://travis-ci.org/bitaddress/bitaddress.svg?branch=master
 
 Command line bitcoin wallet generator, inspired by [bitaddress.org](bitaddress.org)
 
@@ -99,6 +100,16 @@ $ bitaddress bulkwallet -h
     -h, --help                output usage information
 ```
 
+## Tool
+
+###qrcode
+
+Generate qrcode from input to terminal
+
+```bash
+$ bitaddress qrcode 123
+
+```
 
 ## Tests
 
