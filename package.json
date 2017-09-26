@@ -1,0 +1,40 @@
+{
+  "name": "bitaddress",
+  "version": "1.0.0",
+  "description": "Bitcoin address command-line generator",
+  "main": "index.js",
+  "bin": {
+    "bitaddress": "./bin/bitaddress"
+  },
+  "scripts": {
+    "test": "tape test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bitaddress/bitaddress.git"
+  },
+  "keywords": [
+    "bitcoin",
+    "bitaddress",
+    "p2p"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  },
+  "author": "CNIO",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bitaddress/bitaddress/issues"
+  },
+  "homepage": "https://github.com/bitaddress/bitaddress#readme",
+  "dependencies": {
+    "bitcoinjs-lib": "^3.1.1",
+    "commander": "^2.11.0",
+    "pdfkit": "^0.8.3",
+    "qr-image": "^3.2.0",
+    "qrcode-terminal": "^0.11.0"
+  },
+  "devDependencies": {
+    "tape": "^4.8.0"
+  }
+}

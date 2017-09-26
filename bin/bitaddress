@@ -1,0 +1,42 @@
+#!/usr/bin/env node
+var program = require('commander');
+var bitcoin = require('bitcoinjs-lib');
+var bitaddress = require('../lib/index');
+var qrcode = require('qrcode-terminal');
+
+program.version('1.0.0');
+program
+	.command('help')
+	.description('Get help on bitaddress')
+	.action(function() {
+		program.outputHelp();
+	});
+
+program
+	.command('singlewallet')
+	.description('Generate a new bitcoin address')
+	.option('-o, --output <path>', 'Specify file to write report to')
+	.option('-q, --qrcode', 'Print qrcode in the console')
+	.action(bitaddress.singlewallet);
+
+program
+    .command('brainwallet')
+    .description('Generate a new bitcoin address from a passphrase')
+    .option('-o, --output <path>', 'Specify file to write report to')
+    .option('-q, --qrcode', 'Print qrcode in terminal')
+    .action(bitaddress.brainwallet);
+
+program
+    .command('bulkwallet')
+    .description('Generate some new bitcoin addresses')
+    .option('-o, --output <path>', 'Specify file to write report to')
+    .option('-s, --startwith <string>', 'Find address startwith you want')
+    .option('-e, --endwith <string>', 'Find address endwith you want')
+    .action(bitaddress.bulkwallet);
+
+program
+    .command('qrcode')
+    .description('Generate qrcode from input to console')
+    .action(function(input) { qrcode.generate(input) });
+
+program.parse(process.argv);
