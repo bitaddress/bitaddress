@@ -1,6 +1,6 @@
 # Bit Address
 
-Open source command-line bitcoin wallet generator, inspired by [bitaddress.org](bitaddress.org)
+Command line bitcoin wallet generator, inspired by [bitaddress.org](bitaddress.org)
 
 ## Installation
 
@@ -87,7 +87,7 @@ $ bitaddress bulkwallet 10
 
 **Options**
 ```bash
-bitaddress bulkwallet -h
+$ bitaddress bulkwallet -h
 
   Usage: bulkwallet [options]
 
