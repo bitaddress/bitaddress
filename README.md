@@ -16,7 +16,7 @@ $ npm install -g bitaddress
   * Bulk wallet
   * Detail wallet (todo)
   * Generate PDF file automatically
-  * Generate QRCode in terminal
+  * Generate QRCode in terminal (non-network)
   * Quick find address prefix and suffix
   * All generated addresses are compressed
 
@@ -102,12 +102,12 @@ $ bitaddress bulkwallet -h
 
 ## Tool
 
-###qrcode
+### qrcode
 
 Generate qrcode from input to terminal
 
 ```bash
-$ bitaddress qrcode 123
+$ bitaddress qrcode baidu.com
 
 ```
 
